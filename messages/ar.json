@@ -1,0 +1,143 @@
+{
+  "common": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "products": "المنتجات",
+    "requestQuote": "طلب شحنة",
+    "startBrand": "ابدأ علامتك التجارية",
+    "clients": "الأسواق والعملاء",
+    "quality": "الشهادات والجودة",
+    "testimonials": "آراء العملاء",
+    "catalog": "الكتالوجات",
+    "contact": "تواصل معنا",
+    "privacy": "سياسة الخصوصية",
+    "terms": "الشروط والأحكام",
+    "shipping": "سياسة الشحن",
+    "orderTracking": "تتبع الطلب",
+    "language": "اللغة",
+    "arabic": "العربية",
+    "english": "الإنجليزية"
+  },
+  "home": {
+    "hero": {
+      "title": "زيوت طبيعية فاخرة",
+      "subtitle": "شريكك الموثوق في الزيوت الطبيعية عالية الجودة",
+      "requestQuote": "طلب شحنة",
+      "startBrand": "ابدأ علامتك التجارية"
+    },
+    "clients": {
+      "title": "موثوق به من قبل العلامات التجارية الرائدة"
+    },
+    "about": {
+      "title": "عن مصنعنا",
+      "description": "نحن مصنع رائد للزيوت الطبيعية..."
+    },
+    "production": {
+      "title": "القدرات الإنتاجية",
+      "capacity": "الطاقة الإنتاجية السنوية",
+      "products": "خطوط المنتجات",
+      "countries": "دول التصدير"
+    },
+    "products": {
+      "title": "منتجات مميزة",
+      "viewAll": "عرض جميع المنتجات"
+    },
+    "quickOrder": {
+      "title": "طلب سريع",
+      "description": "احصل على عرض سعر في دقائق"
+    },
+    "whiteLabel": {
+      "title": "حلول العلامة البيضاء",
+      "description": "خصص علامتك التجارية مع خدماتنا"
+    }
+  },
+  "about": {
+    "title": "من نحن",
+    "vision": "رؤيتنا",
+    "capabilities": "القدرات الإنتاجية",
+    "quality": "نظام الجودة",
+    "certificates": "الشهادات"
+  },
+  "products": {
+    "title": "منتجاتنا",
+    "viewDetails": "عرض التفاصيل",
+    "orderNow": "اطلب الآن",
+    "description": "الوصف",
+    "specifications": "المواصفات الفنية",
+    "packaging": "خيارات التعبئة",
+    "downloadCoa": "تحميل شهادة التحليل",
+    "downloadMsds": "تحميل MSDS"
+  },
+  "requestQuote": {
+    "title": "طلب شحنة",
+    "customerInfo": "بيانات العميل",
+    "name": "الاسم الكامل",
+    "company": "اسم الشركة",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "country": "الدولة",
+    "orderDetails": "تفاصيل الطلب",
+    "selectOils": "اختر الزيوت",
+    "quantity": "الكمية",
+    "unit": "الوحدة",
+    "packaging": "نوع التعبئة",
+    "orderType": "نوع الطلب",
+    "bulk": "طلب كميات كبيرة",
+    "whiteLabel": "علامة بيضاء",
+    "sample": "عينة",
+    "incoterm": "Incoterm",
+    "shippingDate": "تاريخ الشحن",
+    "attachments": "المرفقات",
+    "notes": "ملاحظات إضافية",
+    "submit": "إرسال الطلب",
+    "success": "تم إرسال الطلب بنجاح!",
+    "orderId": "رقم الطلب"
+  },
+  "whiteLabel": {
+    "title": "ابدأ علامتك التجارية",
+    "description": "أنشئ علامتك التجارية الخاصة مع خدمات العلامة البيضاء",
+    "steps": {
+      "step1": "اختر نوع الزيت",
+      "step2": "صمم الملصق",
+      "step3": "قدم الطلب",
+      "step4": "احصل على منتجك"
+    },
+    "hasDesign": "هل لديك تصميم؟",
+    "uploadDesign": "رفع ملفات التصميم",
+    "needDesign": "سنقوم بإنشاء التصميم لك",
+    "oilType": "نوع الزيت",
+    "quantity": "الكمية",
+    "packaging": "التعبئة",
+    "submit": "إرسال الطلب"
+  },
+  "contact": {
+    "title": "تواصل معنا",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "subject": "الموضوع",
+    "message": "الرسالة",
+    "send": "إرسال الرسالة",
+    "success": "تم إرسال الرسالة بنجاح!"
+  },
+  "tracking": {
+    "title": "تتبع طلبك",
+    "enterOrderId": "أدخل رقم الطلب",
+    "track": "تتبع",
+    "orderId": "رقم الطلب",
+    "status": "الحالة",
+    "customer": "العميل",
+    "items": "المنتجات",
+    "date": "تاريخ الطلب",
+    "statuses": {
+      "NEW": "جديد",
+      "UNDER_REVIEW": "قيد المراجعة",
+      "QUOTED": "تم تقديم السعر",
+      "CONFIRMED": "مؤكد",
+      "SHIPPED": "تم الشحن",
+      "DELIVERED": "تم التسليم",
+      "CANCELLED": "ملغي"
+    }
+  }
+}
+

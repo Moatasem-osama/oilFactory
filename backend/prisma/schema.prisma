@@ -1,0 +1,160 @@
+// This schema should be the same as the main project schema
+// Copy from ../prisma/schema.prisma or use a shared schema file
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum OrderStatus {
+  NEW
+  UNDER_REVIEW
+  QUOTED
+  CONFIRMED
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+enum OrderType {
+  BULK
+  WHITE_LABEL
+  SAMPLE
+}
+
+enum PackagingType {
+  BOTTLE_10L
+  BOTTLE_20L
+  DRUM_200L
+  IBC
+  TANKER
+}
+
+enum UnitType {
+  LITER
+  TON
+  KG
+}
+
+model User {
+  id            String   @id @default(uuid())
+  email         String   @unique
+  password      String
+  name          String?
+  company       String?
+  phone         String?
+  country       String?
+  role          String   @default("USER")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  orders        Order[]
+}
+
+model Product {
+  id          String   @id @default(uuid())
+  nameEn      String
+  nameAr      String
+  descriptionEn String @db.Text
+  descriptionAr String @db.Text
+  image       String?
+  category    String?
+  specifications Json?
+  packaging   Json?
+  coaFile     String?
+  msdsFile    String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  orderItems  OrderItem[]
+}
+
+model Order {
+  id            String        @id @default(uuid())
+  orderId       String        @unique
+  customerId    String?
+  customerName  String
+  customerEmail String
+  customerPhone String?
+  company       String?
+  country       String
+  orderType     OrderType
+  incoterm      String?
+  shippingDate  DateTime?
+  status        OrderStatus   @default(NEW)
+  notes         String?       @db.Text
+  attachments   String[]      @default([])
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  items         OrderItem[]
+  statusHistory OrderStatusHistory[]
+  customer      User?         @relation(fields: [customerId], references: [id])
+}
+
+model OrderItem {
+  id          String    @id @default(uuid())
+  orderId     String
+  productId   String?
+  productName String
+  quantity    Float
+  unit        UnitType
+  packaging   PackagingType
+  customLabel String?
+  labelDesign String?
+  createdAt   DateTime  @default(now())
+  order       Order     @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product     Product?  @relation(fields: [productId], references: [id])
+}
+
+model OrderStatusHistory {
+  id          String      @id @default(uuid())
+  orderId     String
+  status      OrderStatus
+  notes       String?     @db.Text
+  changedBy   String?
+  createdAt   DateTime    @default(now())
+  order       Order       @relation(fields: [orderId], references: [id], onDelete: Cascade)
+}
+
+model CatalogRequest {
+  id          String   @id @default(uuid())
+  name        String
+  email       String
+  country     String?
+  catalogType String?
+  createdAt   DateTime @default(now())
+}
+
+model ContactMessage {
+  id          String   @id @default(uuid())
+  name        String
+  email       String
+  phone       String?
+  subject     String?
+  message     String   @db.Text
+  isRead      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
+
+model WhiteLabelRequest {
+  id          String   @id @default(uuid())
+  customerName String
+  email       String
+  phone       String?
+  company     String?
+  country     String
+  oilType     String
+  quantity    Float
+  packaging   PackagingType
+  hasDesign   Boolean  @default(false)
+  designFiles String[] @default([])
+  needDesign  Boolean  @default(false)
+  notes       String?  @db.Text
+  status      String   @default("PENDING")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+

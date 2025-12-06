@@ -1,0 +1,143 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "requestQuote": "Request Quote",
+    "startBrand": "Start Your Brand",
+    "clients": "Clients & Markets",
+    "quality": "Quality & Certifications",
+    "testimonials": "Testimonials",
+    "catalog": "Download Catalog",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "shipping": "Shipping & Export Policy",
+    "orderTracking": "Order Tracking",
+    "language": "Language",
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium Natural Oils",
+      "subtitle": "Your Trusted B2B Partner for Quality Essential Oils",
+      "requestQuote": "Request Quote",
+      "startBrand": "Start Your Brand"
+    },
+    "clients": {
+      "title": "Trusted by Leading Brands"
+    },
+    "about": {
+      "title": "About Our Factory",
+      "description": "We are a leading manufacturer of natural oils..."
+    },
+    "production": {
+      "title": "Production Capabilities",
+      "capacity": "Annual Capacity",
+      "products": "Product Lines",
+      "countries": "Export Countries"
+    },
+    "products": {
+      "title": "Featured Products",
+      "viewAll": "View All Products"
+    },
+    "quickOrder": {
+      "title": "Quick Order",
+      "description": "Get a quote in minutes"
+    },
+    "whiteLabel": {
+      "title": "White Label Solutions",
+      "description": "Customize your brand with our white label services"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "vision": "Our Vision",
+    "capabilities": "Production Capabilities",
+    "quality": "Quality System",
+    "certificates": "Certifications"
+  },
+  "products": {
+    "title": "Our Products",
+    "viewDetails": "View Details",
+    "orderNow": "Order Now",
+    "description": "Description",
+    "specifications": "Technical Specifications",
+    "packaging": "Packaging Options",
+    "downloadCoa": "Download COA",
+    "downloadMsds": "Download MSDS"
+  },
+  "requestQuote": {
+    "title": "Request Quote",
+    "customerInfo": "Customer Information",
+    "name": "Full Name",
+    "company": "Company Name",
+    "email": "Email",
+    "phone": "Phone",
+    "country": "Country",
+    "orderDetails": "Order Details",
+    "selectOils": "Select Oils",
+    "quantity": "Quantity",
+    "unit": "Unit",
+    "packaging": "Packaging Type",
+    "orderType": "Order Type",
+    "bulk": "Bulk Order",
+    "whiteLabel": "White Label",
+    "sample": "Sample",
+    "incoterm": "Incoterm",
+    "shippingDate": "Shipping Date",
+    "attachments": "Attachments",
+    "notes": "Additional Notes",
+    "submit": "Submit Request",
+    "success": "Request submitted successfully!",
+    "orderId": "Your Order ID"
+  },
+  "whiteLabel": {
+    "title": "Start Your Brand",
+    "description": "Create your own brand with our white label services",
+    "steps": {
+      "step1": "Choose Your Oil",
+      "step2": "Design Your Label",
+      "step3": "Place Your Order",
+      "step4": "Get Your Product"
+    },
+    "hasDesign": "Do you have a design?",
+    "uploadDesign": "Upload Design Files",
+    "needDesign": "We'll create the design for you",
+    "oilType": "Oil Type",
+    "quantity": "Quantity",
+    "packaging": "Packaging",
+    "submit": "Submit Request"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!"
+  },
+  "tracking": {
+    "title": "Track Your Order",
+    "enterOrderId": "Enter Order ID",
+    "track": "Track",
+    "orderId": "Order ID",
+    "status": "Status",
+    "customer": "Customer",
+    "items": "Items",
+    "date": "Order Date",
+    "statuses": {
+      "NEW": "New",
+      "UNDER_REVIEW": "Under Review",
+      "QUOTED": "Quoted",
+      "CONFIRMED": "Confirmed",
+      "SHIPPED": "Shipped",
+      "DELIVERED": "Delivered",
+      "CANCELLED": "Cancelled"
+    }
+  }
+}
+
